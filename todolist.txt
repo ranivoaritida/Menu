@@ -1,0 +1,29 @@
+Creer la base (done)
+Creer les donnees de test(done)
+
+Fonctionnalites
+1. Lister le menu du jour (pas besoin d’être connecté) (DONE)
+    . requetes pour avoir les plats dans le menu du jour (done)
+    . fonctions pour avoir les plats du jour : return plat[] (done)
+    . controller pour envoyer les plats du jour (done)
+2. Etudiants
+    a. Inscription (numETU, pwd, nom, date naissance)
+        . table etudiant (done)
+        . fonction Inscription : creation token (done)
+        . controller d'inscription (done)
+    b. Connexion
+        . fonction connexion(numETU, password) : retourner token si reussi (done)
+        . controller de connexion (done)
+    c. Modification profil (nom, date naissance)
+        . voirSiAuthentifie(token) : return token
+        . fonction modifier(token, nom, dateNaissance) (done)
+        . controller de modification (done)
+    d. Commander les plats
+        . table commande(done)
+        . fonction commander(idEtudiant,idPlat,idMenu,quantite) (done)
+        . controller de commande (done)
+        i. Modifier commande (done)
+    e. Voir le montant total des plats pour l’étudiant
+        . getCommande (done)
+        . getTotal
+3. Lister les plats et le nombre à préparer par la cantine (pas besoin d’être connecté)
