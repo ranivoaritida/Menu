@@ -1,6 +1,6 @@
 <?php
 
- require APPPATH . '/libraries/REST_Controller.php';
+ require APPPATH . 'libraries/REST_Controller.php';
  use Restserver\Libraries\REST_Controller;
 
  class Cantine extends REST_Controller{
@@ -12,7 +12,7 @@
     public function __construct() {
         parent::__construct();
         $this->load->database();
-        $this->load->model("Cantine_model", "cantine");
+        $this->load->model("cantine_model", "cantine");
     }
 
     public function index_get($idmenu){

@@ -1,6 +1,6 @@
 <?php
 
- require APPPATH . '/libraries/REST_Controller.php';
+ require APPPATH . 'libraries/REST_Controller.php';
  use Restserver\Libraries\REST_Controller;
 
  class Commande extends REST_Controller{
