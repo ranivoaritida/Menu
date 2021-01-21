@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Etudiant_model extends CI_model {
+class Etudiant_model extends CI_Model {
     public function inscription($etudiant){
         $sql = "insert into Etudiant(numEtu, pwd, nom, naissance, token) values('%s', sha1('%s'), '%s', '%s', sha1('%s'))";
         $sql = sprintf($sql,$etudiant['numEtu'],$etudiant['pwd'],$etudiant['nom'],$etudiant['naissance'],$etudiant['numEtu']);

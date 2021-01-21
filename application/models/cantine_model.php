@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Cantine_model extends CI_model {
+class Cantine_model extends CI_Model {
     public function getPlats($idmenu){
         $sql = "select Plat.id, Plat.intitule, Plat.code, sum(quantite) as quantite
         from Plat join Commande
